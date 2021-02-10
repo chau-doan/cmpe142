@@ -15,11 +15,11 @@ int main (int argc, char *args[]) {
   string line;
   string name(args[1]);
 
-  ifstream myfile (name);
+  ifstream myfile (name, ios::in);
   getline (myfile,line,',') ;
-  while (line != ""){
+  while (!myfile.eof()){
 	  cout << "<tr>" << endl;
-	  cout << "\t" << "<td>" << line << "</td><td>";
+	  cout << "\t" << "<td>";
 	  getline (myfile,line,',') ;
 	  cout << line << "</td><td>";
 	  getline (myfile,line,',') ;
