@@ -18,18 +18,18 @@ int main (int argc, char *args[]) {
   ifstream myfile (name, ios::in);
   getline (myfile,line,',') ;
   while (!myfile.eof()){
-	  cout << "<tr>" << endl;
-	  cout << "\t" << "<td>";
-	  getline (myfile,line,',') ;
-	  cout << line << "</td><td>";
-	  getline (myfile,line,',') ;
-	  cout << line << "</td><td>";
-	  getline (myfile,line,',') ;
-	  cout << line << "</td><td>";
-	  getline (myfile,line,'\n') ;
-	  cout << line << "</td>" << endl;
-	  cout << "</tr>" << endl;
-	  getline (myfile,line,',') ;
+	  	  cout << "<tr>" << endl;
+	  	  cout << "\t" << "<td>" << line << "</td><td>";
+	  	  getline (myfile,line,',') ;
+	  	  cout << line << "</td><td>";
+	  	  getline (myfile,line,',') ;
+	  	  cout << line << "</td><td>";
+	  	  getline (myfile,line,',') ;
+	  	  cout << line << "</td><td>";
+	  	  getline (myfile,line,'\n') ;
+	  	  cout << line << "</td>" << endl;
+	  	  cout << "</tr>" << endl;
+	  	  getline (myfile,line,',') ;
   }
   myfile.close();
 
