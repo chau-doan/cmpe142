@@ -12,8 +12,6 @@ using namespace std;
 
 int main () {
   string line,s;
-  ofstream myfile;
-  myfile.open("test.html");
   line ="";
   while (!cin.eof()){
 	  line = line + "\n";
@@ -21,13 +19,12 @@ int main () {
 	  line = line + s ;
   }
 
-  myfile << "<html> \n<body> \n<table border='1'>";
-  myfile << "\t<tr> \n<th>Start</th><th>End</th><th>First</th><th>Middle</th><th>Last</th>\n\t</tr>";
+  cout << "<html> \n<body> \n<table border='1'>";
+  cout << "\t<tr> \n<th>Start</th><th>End</th><th>First</th><th>Middle</th><th>Last</th>\n\t</tr>";
 
 
-  myfile << "\t" << line;
-  myfile << "</table> \n</body> \n</html>";
-  myfile.close();
+  cout << "\t" << line;
+  cout << "</table> \n</body> \n</html>";
 
   return 0;
 }
