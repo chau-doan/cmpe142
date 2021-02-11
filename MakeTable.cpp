@@ -16,11 +16,11 @@ int main () {
   while (!cin.eof()){
 	  line = line + "\n";
 	  getline(cin,s);
-	  line = line + s ;
+	  line = line + "\t" + s ;
   }
 
-  cout << "<html> \n<body> \n<table border='1'>";
-  cout << "\t<tr> \n<th>Start</th><th>End</th><th>First</th><th>Middle</th><th>Last</th>\n\t</tr>";
+  cout << "<html> \n<body> \n<table border='1'>\n";
+  cout << "\t<tr> \n\t\t<th>Start</th><th>End</th><th>First</th><th>Middle</th><th>Last</th>\n\t</tr>";
 
 
   cout << "\t" << line;

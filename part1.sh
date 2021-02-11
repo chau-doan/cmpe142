@@ -1,5 +1,5 @@
 #!/bin/bash
 touch presidents.html
-g++ -o read readcsv.cpp
-g++ -o write maketable.cpp
-./read < presidents.csv | ./write > presidents.html
+g++ -o ReadCSV ReadCSV.cpp
+g++ -o MakeTable MakeTable.cpp
+./ReadCSV < presidents.csv | ./MakeTable > presidents.html

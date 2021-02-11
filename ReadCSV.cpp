@@ -11,7 +11,8 @@ int main()
 	while(getline(cin,temp))
 	{
 		stringstream s(temp);
-		cout << "<tr>\n\t";
+		cout << "<tr>\n";
+		cout << "\t";
 		cout.flush();
 		while(getline(s, temp, ','))
 		{
