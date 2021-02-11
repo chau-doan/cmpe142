@@ -1,16 +1,28 @@
-/*
- * echo.cpp
- *
- *  Created on: Feb 8, 2021
- *      Author: thuyluu9595
- */
-
 #include <iostream>
 #include <fstream>
 #include <string>
-//#include <ostream>
+#include <sstream>
+
 using namespace std;
 
+int main()
+{
+	string temp;
+	while(getline(cin,temp))
+	{
+		stringstream s(temp);
+		cout << "<tr>\n\t";
+		cout.flush();
+		while(getline(s, temp, ','))
+		{
+			cout << "<td>" << temp << "</td>";
+			cout.flush();
+		}
+		cout << "\n</tr>\n";
+	}
+	return 0;
+}
+/*
 int main (int argc, char *args[]) {
   string line;
   string name(args[1]);
@@ -35,3 +47,4 @@ int main (int argc, char *args[]) {
 
   return 0;
 }
+*/
